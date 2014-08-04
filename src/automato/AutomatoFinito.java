@@ -46,8 +46,7 @@ public class AutomatoFinito extends Grafo implements Serializable{
 			if(erro) return false;
 		}
 
-		if(estado.isReconhecedor() && !erro) return true;
-		else return false;
+		return estado.isReconhecedor() && !erro;		
 	}
 
 
